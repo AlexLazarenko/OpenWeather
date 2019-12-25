@@ -7,7 +7,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 
 @Configuration
-@PropertySource("classpath:src/main/resources/config.properties")
+@PropertySource("classpath:/config.properties")
 public class PlaceholderConfigurer {
     @Bean
     public PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {

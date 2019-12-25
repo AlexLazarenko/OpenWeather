@@ -6,9 +6,12 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+/**
+ * this class using to run application with a certain frequency
+ */
 @Component
 public class ScheduledTasks {
-    @Scheduled(cron = "*/600 * * * * *")
+    @Scheduled(cron = "${schedule.cron}")
     public void schedule() {
         try {
             OpenWeatherController.execute();
