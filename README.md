@@ -14,7 +14,7 @@ mvn spring-boot:run
 This application is using scheduled task with `@Scheduled(cron=". . .")` annotation to periodically makes requests and saves responses to a MongoDB cloud. Cron expression defines how often scheduled task run. You can change  cron expression in the `config.properties` file. 
 ## Configurable properties
 In this application following points are configurable (using `config.properties` file):
-a) API request URL
-b) API key
-c) Schedule (cron expression)
-d) MongoDB URI 
+* API request URL
+* API key
+* Schedule (cron expression)
+* MongoDB URI 
