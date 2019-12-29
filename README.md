@@ -11,3 +11,4 @@ Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/
 ```shell
 mvn spring-boot:run
 ```
+This application is using scheduled task with `@Scheduled(cron=". . .")` annotation to periodically makes requests and saves responses to a MongoDB cloud. Cron expression defines how often scheduled task run. You can change  cron expression in the `config.properties` file. https://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html[There is examlples of cron expressions].
